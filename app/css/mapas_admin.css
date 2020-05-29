@@ -1,0 +1,427 @@
+/* -------------------------------*/
+/*                                */
+/*       PATRÓN DE COLORES:       */
+/*                                */
+/* -------------------------------*/
+
+:root {
+
+    --principal: #2C7558;
+}
+
+/*---------------------------------*/
+html,
+body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs {
+    position: absolute;
+    z-index: 2;
+}
+
+/* -------------------------------*/
+/*                                */
+/*              MAPA:             */
+/*                                */
+/* -------------------------------*/
+
+#map {
+
+    position: absolute;
+    top: 7.3rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* -------------------------------*/
+/*                                */
+/*             CENTRAR:           */
+/*                                */
+/* -------------------------------*/
+
+#centrar {
+
+    position: absolute;
+    z-index: 1;
+    top: 9rem;
+    left: 15rem;
+}
+
+.btn-secondary {
+
+    font-family: "Century Gothic";
+    color: white;
+    background-color: var(--principal);
+    border: 2px solid white;
+	margin-right: 1rem;
+}
+
+.btn-secondary:focus,
+.btn-secondary:hover {
+
+    background-color: var(--principal);
+    border-color: white;
+}
+
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+
+    color: var(--principal);
+    background-color: white;
+    border-color: var(--principal);
+}
+
+.menuDos {
+    display: flex;
+    align-items: center;
+}
+
+.cerrarSesion{
+	font-family: "Century Gothic";
+    color: white;
+    background-color: var(--principal);
+    border: 2px solid white;
+	margin-right: 1rem;
+}
+
+.cerrarSesion:focus,
+.cerrarSesion:hover {
+
+    background-color: white;
+    border-color: white;
+	color: rgb(44,117,88);
+}
+
+/* -------------------------------*/
+/*                                */
+/*           DESPLEGABLE:         */
+/*                                */
+/* -------------------------------*/
+
+#accordion {
+
+    position: absolute;
+    z-index: 1;
+	left: 0;
+}
+
+.card-header {
+
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0;
+    margin-left: 1.25rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    width: 8rem;
+}
+
+.card-body {
+
+    padding: 0;
+    margin-left: 1.25rem;
+}
+
+.card {
+
+    border: none;
+    background: transparent;
+}
+
+/*BOTÓN PRINCIPAL*/
+
+.svg-inline--fa.fa-sort {
+
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+.btn {
+
+    transition: none;
+}
+
+.btn:focus {
+
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary {
+
+    font-family: "Century Gothic";
+    color: white;
+    background-color: var(--principal);
+    border: 2px solid white;
+    width: 13rem;
+    display: flex;
+    padding-left: 45%;
+}
+
+.btn-primary:hover {
+
+    color: var(--principal);
+    background-color: white;
+    border-color: var(--principal);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+
+    color: var(--principal);
+    background-color: white;
+    border-color: var(--principal);
+}
+/*BUSCADOR*/
+
+#buscar{
+    
+    margin-left: -0.05rem;
+    width: 13.3rem;
+    border: 1px solid var(--principal);
+    border-radius: 0.2rem 0.2rem 0rem 0rem;
+    color: var(--principal);
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	background: white url(../media/images/lupa.png) no-repeat 98% 50%;
+}
+
+#buscar:focus {
+
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid var(--principal);
+}
+
+.fa-search {
+
+    position: absolute;
+    left: 13rem;
+    top: 4.7rem;
+    color: var(--principal);
+}
+
+.colorDesplegable{
+	border-radius: 0.2rem;
+}
+/*SCROLLBAR*/
+
+.scrollbar {
+
+    max-height: 10.5rem;
+    max-width: 13.2rem;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+#style-1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar {
+
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--principal);
+}
+
+/*LISTADO*/
+
+.list-group {
+
+    cursor: pointer;
+}
+
+.list-group-item:first-child {
+    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.custom-control-label {
+
+    cursor: pointer;
+    font-family: "Century Gothic";
+}
+
+.custom-switch {
+
+    padding-left: 1rem !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+
+    color: #fff;
+    border-color: var(--principal) !important;
+    background-color: var(--principal) !important;
+}
+
+/* -------------------------------*/
+/*                                */
+/*           INFOWINDOW:          */
+/*                                */
+/* -------------------------------*/
+
+#titulo {
+
+    font-family: "Century Gothic";
+    font-size: 1rem;
+    text-align: center
+}
+
+#contenido img {
+
+    width: 40px;
+    height: 40px;
+    padding: 0.4rem;
+    margin: 0 auto;
+}
+
+#resultado {
+
+    display: flex;
+    text-align: center;
+}
+
+#resultado h3 {
+
+    font-family: "Century Gothic";
+    font-size: 2.5vw;
+    margin-left: 0.3rem;
+	font-weight: bold;
+}
+
+#resultado div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#listado {
+
+    order: 1;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+.boton-enviar {
+
+    background-color: #2e8b57;
+    border: var(--principal) 2px solid;
+    border-radius: 12px;
+    color: white;
+    padding: 0.1rem 0.1rem;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Century Gothic";
+    width: 80%;
+    margin-left: 10%;
+}
+
+.boton-enviar:hover {
+
+    background-color: white;
+    border: var(--principal) 2px solid;
+    color: var(--principal);
+}
+
+/*colores que obtienen los mensages en caso de alerta*/
+.ok{
+	color: var(--principal);
+	
+}
+
+.alertaMaxima{
+	color: red;
+}
+
+.alertaMedia{
+	color: #ffa700;
+}
+
+/* -------------------------------*/
+/*                                */
+/*          MEDIA-QUERIES:        */
+/*                                */
+/* -------------------------------*/
+
+@media(max-width:400px) {
+
+    form {
+        margin: 5px;
+    }
+}
+@media(min-width:700px) {
+
+    .boton-enviar {
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+}
+@media(min-width:550px) {
+
+    #titulo {
+
+        font-size: 1.5rem;
+    }
+
+    #resultado h3 {
+
+        font-size: 18px;
+    }
+
+    #contenido img {
+        width: 50px;
+        height: 50px;
+        padding: 0.4rem;
+        margin: 0 auto;
+    }
+    
+}
+/*------------------------------------------CSS DE LAS GRÁFICAS----------------------------------------------------*/
+#contenedor {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.horas {
+
+    margin-left: 1rem;
+    order: 1;
+}
+

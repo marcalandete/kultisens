@@ -1,0 +1,202 @@
+#crearUsuario {
+	padding-top: 1.5rem;
+}
+
+/* EL OJO */
+label {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 0.4rem;
+	margin-left: -2rem;
+	z-index: 1;
+}
+
+.contenedor-recuperar1 {
+	display: flex;
+	color: rgb(44, 117, 88);
+	align-items: center;
+	width: 100%;
+}
+
+.mail {
+	height: 24px;
+	width: 24px;
+	margin-right: 0.5rem;
+}
+
+.campo {
+	background-color: transparent;
+	border-bottom: 1px solid #2C7558;
+	border-radius: 5px !important;
+	border: 1px solid #2C7558;
+	width: 100%;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #2C7558;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: "Century Gothic";
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0.2rem;
+}
+
+.campo:focus,
+clave1:focus,
+clave1:focus {
+	outline: 0;
+	border: 2px solid #2C7558;
+}
+
+/*---------para poner dos columnas en una fila-------*/
+.separados {
+	max-width: 49% !important;
+}
+
+#dosInputs,
+#psw2 {
+	left: 2% !important;
+}
+
+#desplazado {
+	margin-left: -1.7rem;
+}
+
+.fondoVerde {
+	font-size: 1rem;
+	margin-bottom: 0 !important;
+	font-weight: bold;
+}
+
+/*----------------------------------------------------*/
+
+.contenedor-recuperar1 .campo {
+	width: 30%;
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+
+.botones {
+	float: right;
+}
+
+.volver-login {
+	background-color: #4CAF50;
+	border: #008000 2px solid;
+	border-radius: 0.5rem;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: -1px 1px;
+	cursor: pointer;
+}
+
+.volver-login:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	text-decoration: none;
+	border: #008000 2px solid;
+	color: #4CAF50;
+}
+
+.boton-enviar {
+	background-color: #2e8b57;
+	border: #006400 2px solid;
+	border-radius: 0.5rem;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 0 5px 0;
+	cursor: pointer;
+}
+
+.boton-enviar:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	border: #006400 2px solid;
+	color: #2e8b57;
+}
+
+#alerta,
+#exito {
+	margin-bottom: 0 !important;
+	margin-top: 1rem;
+}
+
+.volver_inicio,
+.volver_inicio:hover,
+.volver_inicio:focus {
+	color: white;
+	margin: 0;
+	font-size: 30px;
+}
+
+.btn-secondary {
+
+	color: var(--principal);
+	background-color: white;
+	border: #22bb65 2px solid;
+	cursor: pointer;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+
+	background-color: rgb(44, 117, 88);
+	border-color: white;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+	color: rgb(44, 117, 88);
+	background-color: white;
+	border-color: white;
+}
+
+.menuDos {
+	display: flex;
+	align-items: center;
+}
+
+/*botón cerrar sesión*/
+@media (min-width: 700px) .btn-secondary {
+	height: 100%;
+	font-size: 16px;
+	padding: 0.5rem;
+}
+
+@media (min-width: 400px) .btn-secondary {
+	height: 45px;
+	font-size: 13px;
+	padding: 0 0.5rem;
+}
+
+.btn-secondary {
+	color: white;
+	background-color: rgb(44,117,88);
+	border: 2px solid white;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+	color: rgb(44,117,88);
+	background-color: white;
+}
+
+@media (min-width: 650px) {
+	.botones {
+		padding-left: 50%;
+	}
+}
+}

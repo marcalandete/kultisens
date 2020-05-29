@@ -1,0 +1,412 @@
+/*section {
+    padding: 60px 0;
+}*/
+
+section .section-title {
+	text-align: center;
+	color: #007b5e;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+a:not([href]):not([tabindex]) {
+	color: inherit;
+	text-decoration: none;
+	border-color: rgb(44, 117, 88);
+}
+
+.card-body {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1.25rem;
+	border-color: rgb(44, 117, 88);
+}
+
+#tabs h6.section-title {
+	color: #eee;
+}
+/*  -----------------------------
+-            Pop-up             -
+-----------------------------   */
+.modal{
+
+    height: 40rem;
+    width: 31rem;
+}
+/*---------para poner dos columnas en una fila-------*/
+
+.separados {
+	max-width: 49% !important;
+}
+
+#dosInputs,
+#psw2 {
+	left: 2% !important;
+}
+
+#desplazado {
+	margin-left: -1.7rem;
+}
+
+.vertices {
+	display: flex;
+	flex-direction: row;
+}
+
+.separadosVertices {
+	max-width: 90%;
+}
+
+.mail1{
+	height: 24px;
+	width: 24px;
+}
+
+/*----------------------------------------------*/
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #f3f3f3;
+	background-color: transparent;
+	border-color: transparent transparent #f3f3f3;
+	border-bottom: 4px solid !important;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#tabs .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	color: #007b5e;
+	font-size: 14px;
+}
+
+#totalPagina {
+	width: 100% !important;
+}
+
+/* EL OJO */
+label {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 0.4rem;
+	margin-left: -2rem;
+	z-index: 1;
+}
+
+.volver_inicio,
+.volver_inicio:hover,
+.volver_inicio:focus {
+	color: white;
+	margin: 0;
+	font-size: 30px;
+}
+
+
+
+#crearUsuario {
+	padding-top: 1.5rem;
+}
+
+.contenedor-recuperar1 {
+	display: flex;
+	color: rgb(44, 117, 88);
+	align-items: center;
+	width: 100%;
+}
+
+.mail {
+	height: 24px;
+	width: 24px;
+	margin-right: 0.5rem;
+}
+
+.campo {
+	background-color: transparent;
+	border-bottom: 1px solid #2C7558;
+	border-radius: 5px !important;
+	border: 1px solid #2C7558;
+	width: 100%;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #2C7558;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: "Century Gothic";
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0.2rem;
+}
+
+.campo:focus,
+clave1:focus,
+clave1:focus {
+	outline: 0;
+	border: 2px solid #2C7558;
+}
+
+.fondoVerde {
+	font-size: 1rem;
+	margin-bottom: 0 !important;
+	font-weight: bold;
+	color: rgb(44,117,88);
+}
+
+.fondoVerde2 {
+	font-size: 1rem;
+	margin-bottom: 0 !important;
+}
+
+.contenedor-recuperar1 .campo {
+	width: 30%;
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+
+.botones {
+	float: right;
+}
+
+.volver-login {
+	background-color: #4CAF50;
+	border: #008000 2px solid;
+	border-radius: 0.5rem;
+	color: white !important;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: -1px 1px;
+	cursor: pointer;
+}
+
+.volver-login:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	text-decoration: none;
+	border: #008000 2px solid;
+	color: #4CAF50 !important;
+}
+
+.boton-enviar,
+.boton-enviar2 {
+	background-color: #2e8b57;
+	border: #006400 2px solid;
+	border-radius: 0.5rem;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 0 5px 0;
+	cursor: pointer;
+}
+
+.boton-enviar:hover,
+.boton-enviar2:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+	background-color: white !important;
+	border: #006400 2px solid !important;
+	color: #2e8b57 !important;
+}
+
+.menuDos {
+    display: flex;
+    align-items: center;
+}
+
+.cerrarSesion {
+    font-family: "Century Gothic";
+    color: white;
+    background-color: var(--principal);
+    border: 2px solid white;
+    margin-right: 1rem;
+}
+
+.cerrarSesion:focus,
+.cerrarSesion:hover {
+
+    background-color: white;
+    border-color: white;
+	color: rgb(44,117,88);
+}
+
+.cerrarSesion:not(:disabled):not(.disabled):active{
+	background-color: white;
+    border-color: white;
+	color: rgb(44,117,88);
+}
+/*  -----------------------------
+-            Botones            -
+-----------------------------   */
+.boton-cancelar {
+    background-color: #4CAF50;
+    border: #008000 2px solid;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -1px 1px;
+    cursor: pointer;
+}
+
+.boton-cancelar:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    text-decoration: none;
+    border: #008000 2px solid;
+    color: #4CAF50;
+}
+#alerta,
+#exito {
+	margin-bottom: 0 !important;
+}
+
+.paralelos{
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+	align-items: center;
+}
+
+.crearParcelas{
+	padding-top: 2rem;
+}
+
+.serie{
+	display: flex;
+}
+
+#Sondas{
+	width: 100%;
+}
+
+.adicional{
+	margin-right: 0 !important;
+}
+/*  -----------------------------
+    -                           -
+    -   Editar/añadir Parcelas  -
+    -                           -
+    -----------------------------   */
+
+.fa-w-10 {
+	float: right;
+	margin-top: 0.5rem;
+	margin-right: 0.2rem;
+	color: rgb(44, 117, 88;
+	)
+}
+
+body h3 {
+	color: #007b5e;
+
+}
+
+.btn-primary {
+	background-color: #007b5e;
+	border: 2px solid #006400;
+	padding: 0 1rem;
+	border-radius: 5px;
+
+}
+
+
+@media (min-width: 650px) {
+
+	#tabs .nav-tabs .nav-link {
+		font-size: 20px;
+	}
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+	/* Firefox */
+}
+
+/*SCROLLBAR*/
+
+.scrollbar {
+
+	max-height: 70vh;
+	background: transparent;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#style-1::-webkit-scrollbar-track {
+
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar {
+
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: rgb(44,117,88);
+}
+
+.opciones {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.fa-trash-alt {
+	color: rgb(44, 117, 88);
+	cursor: pointer;
+	margin-right: 0.3rem;
+	
+}
+
+.colores{
+	border-radius: 0.2rem;
+	margin-right: 0.5rem;
+}
+
+.subir, .bajar{
+	float: right;
+	cursor: pointer;
+}
+
+.alLado{
+	display: flex;
+	align-items: center;
+}
+
+.oculto{
+	display: none;
+}
+/*  -----------------------------
+-              Mapa             -
+-----------------------------   */
+#map {
+	height: 30rem;
+	width: 29rem;
+}

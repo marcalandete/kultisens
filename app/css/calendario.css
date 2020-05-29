@@ -1,0 +1,315 @@
+#calendar {
+
+    padding-top: 1rem !important;
+}
+
+tr:first-child > td > .fc-day-grid-event {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-trash-alt {
+
+    color: white;
+}
+
+.fc-right .fc-today-button,
+.fc-right .fc-prev-button,
+.fc-right .fc-next-button,
+.fc-right .fc-timeGridWeek-button,
+.fc-right .fc-dayGridMonth-button,
+.fc-right .fc-listWeek-button {
+    background-color: #2C7558;
+    background-image: none;
+    outline: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    font-family: "Century Gothic";
+}
+
+/*.fc-right .fc-today-button,
+   .fc-right .fc-prev-button,
+   .fc-right .fc-next-button,
+   .fc-right .fc-timeGridWeek-button,
+   .fc-right .fc-dayGridMonth-button,
+   .fc-right .fc-listWeek-button,
+   :focus {
+       background: #2C7558;
+   }*/
+
+.fc-button-primary:not(:disabled):active,
+.fc-button-primary:not(:disabled).fc-button-active {
+    color: #fff;
+    background-color: #339f62;
+    border-color: #151e27;
+    font-weight: bold;
+}
+
+.fc-left h2 {
+    color: #2C7558;
+    font-weight: 300;
+    font-family: "Century Gothic";
+    padding-bottom: 0.5rem;
+}
+
+.fc-scroller {
+    height: auto !important;
+}
+
+.fc-head .fc-widget-header {
+    margin-right: 0 !important;
+}
+
+.fc-scroller {
+    overflow: visible !important;
+}
+
+.fc-day-header {
+    color: #2C7558;
+    font-family: "Century Gothic";
+}
+
+.fc-past {
+    background-color: rgba(220, 220, 220, 0.38);
+}
+
+.fc-today {
+    background: rgba(44, 117, 88, 0.62);
+}
+
+.fc-body .fc-widget-content {
+    /*color del modo semana*/
+    color: #2C7558;
+}
+
+.fc-scroller .fc-list-empty-wrap2 .fc-list-empty-wrap1 .fc-list-empty {
+    background: rgba(44, 117, 88, 0.83);
+    color: white;
+}
+
+/*.fc-toolbar fc-header-toolbar {
+    display:flex;
+    flex-direction: column;
+}*/
+
+.fc-event-container .fc-content .fc-title {
+    color: white;
+}
+
+.fc-event-container .fc-content .fc-time {
+    color: white;
+}
+
+.fc-toolbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fc-list-table .fc-widget-header {
+    color: white;
+    background: #2C7558 !important;
+    font-family: "Century Gothic" !important;
+    font-weight: 200;
+}
+
+.fc-list-table .fc-list-item {
+    color: #2C7558 !important;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 700px) {
+    #iconoAñadir {
+        margin-right: -2rem;
+    }
+}
+
+/*
+    EVENTOS
+*/
+
+#iconoAñadir {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 80;
+    float: right;
+    width: 50px !important;
+    cursor: url('../media/Images/a%C3%B1adirEVento.png'), pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #2C7558;
+    font-family: "Century Gothic";
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.modal-footer {
+    margin-bottom: -1rem;
+}
+
+.modal-header {
+    background: #2C7558;
+    color: white;
+    font-family: "Century Gothic";
+}
+
+.modal-header .modal-title {
+    padding-right: 3rem !important;
+}
+
+.close {
+    
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    opacity: 1;
+    background-image: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+button.close{
+    
+    outline: none
+}
+
+close:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.boton-enviar {
+    background-color: #2e8b57;
+    border: #006400 2px solid;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    border: #006400 2px solid;
+    color: #2e8b57;
+}
+
+.boton-enviar:focus{
+    
+    box-shadow: none;
+    outline: none;
+}
+
+.volver-login {
+    background-color: #4CAF50;
+    border: #008000 2px solid;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -1px 1px;
+    cursor: pointer;
+    margin-bottom: -6px;
+}
+
+.volver-login:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    text-decoration: none;
+    border: #008000 2px solid;
+    color: #4CAF50;
+}
+
+.volver-login:focus {
+
+    box-shadow: none;
+    outline: none;
+}
+
+.campo {
+
+    padding: 0.4rem 0.7rem;
+    background-color: transparent;
+    border-bottom: 1px solid #2C7558;
+    border-radius: 5px !important;
+    border: 1px solid #2C7558;
+    width: 100%;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    color: #2C7558;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Century Gothic";
+
+}
+
+.campo:focus,
+.campoC:focus {
+    
+    outline: 0;
+    background-color: white;
+    border: 2px solid #2C7558;
+}
+
+.container{
+    
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row{
+    
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-3{
+    
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.col-3 .campo{
+    
+    margin-top: -5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+	/* Firefox */
+}

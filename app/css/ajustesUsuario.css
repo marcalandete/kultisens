@@ -1,0 +1,405 @@
+/*section {
+    padding: 60px 0;
+}*/
+
+section .section-title {
+	text-align: center;
+	color: #007b5e;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+a:not([href]):not([tabindex]) {
+	color: inherit;
+	text-decoration: none;
+	border-color: rgb(44, 117, 88);
+}
+
+.card-body {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1.25rem;
+	border-color: rgb(44, 117, 88);
+}
+
+#tabs h6.section-title {
+	color: #eee;
+}
+
+/*SCROLLBAR*/
+
+.scrollbar {
+
+	max-height: 60vh;
+	background: transparent;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-top: 2rem;
+	margin-right: 1rem;
+	height: 100vh;
+}
+
+
+#style-1::-webkit-scrollbar-track {
+
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar {
+
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: var(--principal);
+}
+
+/*----------------------------------------------*/
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #f3f3f3;
+	background-color: transparent;
+	border-color: transparent transparent #f3f3f3;
+	border-bottom: 4px solid !important;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#tabs .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	color: #007b5e;
+	font-size: 14px;
+}
+
+#totalPagina {
+	width: 100% !important;
+}
+
+/* EL OJO */
+label {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 0.4rem;
+	margin-left: -2rem;
+	z-index: 1;
+}
+
+.volver_inicio,
+.volver_inicio:hover,
+.volver_inicio:focus {
+	color: white;
+	margin: 0;
+	font-size: 30px;
+}
+
+
+
+#crearUsuario {
+	padding-top: 1.5rem;
+}
+
+.contenedor-recuperar1 {
+	display: flex;
+	color: rgb(44, 117, 88);
+	align-items: center;
+	width: 100%;
+}
+
+.mail {
+	height: 24px;
+	width: 24px;
+	margin-right: 0.5rem;
+}
+.mail1{
+	height: 24px;
+	width: 24px;
+}
+
+.campo {
+	background-color: transparent;
+	border-bottom: 1px solid #2C7558;
+	border-radius: 5px !important;
+	border: 1px solid #2C7558;
+	width: 100%;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #2C7558;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: "Century Gothic";
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0.2rem;
+}
+
+.campo:focus,
+clave1:focus,
+clave1:focus {
+	outline: 0;
+	border: 2px solid #2C7558;
+}
+
+.fondoVerde {
+	font-size: 1rem;
+	margin-bottom: 0 !important;
+	font-weight: bold;
+}
+
+.contenedor-recuperar1 .campo {
+	width: 30%;
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+
+.botones {
+	float: right;
+}
+
+.volver-login {
+	background-color: #4CAF50;
+	border: #008000 2px solid;
+	border-radius: 0.5rem;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: -1px 1px;
+	cursor: pointer;
+}
+
+.volver-login:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	text-decoration: none;
+	border: #008000 2px solid;
+	color: #4CAF50;
+}
+
+.boton-enviar {
+	background-color: #2e8b57;
+	border: #006400 2px solid;
+	border-radius: 0.5rem;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.volver-login {
+    background-color: #4CAF50;
+    border: #008000 2px solid;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -1px 1px;
+    cursor: pointer;
+	margin-right: 1rem;
+}
+
+.volver-login:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    text-decoration: none;
+    border: #008000 2px solid;
+    color: #4CAF50;
+}
+
+.boton-enviar:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	border: #006400 2px solid;
+	color: #2e8b57;
+}
+
+#alerta,
+#exito {
+	margin-bottom: 0 !important;
+}
+
+.subir, .bajar{
+	float: right;
+}
+
+/*  -----------------------------
+    -                           -
+    -   Editar/añadir Parcelas  -
+    -                           -
+    -----------------------------   */
+
+
+body h3 {
+	color: #007b5e;
+
+}
+
+.btn-primary {
+	background-color: #007b5e;
+	border: 2px solid #006400;
+	padding: 0 1rem;
+	border-radius: 5px;
+
+}
+
+.fa-w-10 {
+	float: right;
+	margin-top: 0.5rem;
+	margin-right: 0.2rem;
+	color: rgb(44, 117, 88;
+	)
+}
+
+@media (min-width: 650px) {
+	.botones {
+		padding-left: 50%;
+	}
+
+	#tabs .nav-tabs .nav-link {
+		font-size: 20px;
+	}
+}
+
+.alLado{
+	display: flex;
+	align-items: center;
+}
+
+.colorDesplegable{
+	border-radius: 0.2rem;
+	margin-right: 0.5rem;
+}
+
+/*  -----------------------------
+    -                           -
+    -         Scrollbar         -
+    -                           -
+    -----------------------------   */
+#style-1::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar {
+
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: var(--principal);
+}
+
+/*editar parcelas*/
+.campo,
+.clave1 {
+	background-color: transparent;
+	border-bottom: 1px solid #2C7558;
+	border-radius: 5px !important;
+	border: 1px solid #2C7558;
+	width: 100%;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #2C7558;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: "Century Gothic";
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0.2rem;
+}
+
+.campoC,
+.lapiz1,
+.lapiz2 {
+	background-color: gainsboro;
+	border-bottom: 1px solid #2C7558;
+	border-radius: 5px !important;
+	border: 1px solid #2C7558;
+	width: 100%;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #2C7558;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: "Century Gothic";
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0.2rem;
+}
+
+.campo:focus,
+.clave1:focus {
+	outline: 0;
+	border: 2px solid #2C7558;
+}
+
+.campoC:focus,
+.lapiz1:focus,
+.lapiz2:focus {
+	outline: 0;
+}
+
+/*---------para poner dos columnas en una fila-------*/
+
+#desplazado {
+	margin-left: -1.7rem;
+}
+
+.separados {
+	max-width: 49% !important;
+}
+
+.lapiz {
+	height: 20px;
+	width: 20px;
+	margin-right: 70%;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.dosInputs {
+	left: 2% !important;
+}
+
+@media (max-width: 650px) {
+	.lapiz {
+		height: 20px;
+		width: 20px;
+		margin-right: 55%;
+		margin-left: auto;
+		cursor: pointer;
+	}
+}
+
+/*--------alertas para error contraseña o confirmar que s eha hecho bien--------*/
+#alerta,
+#exito {
+	margin-bottom: 0 !important;
+}

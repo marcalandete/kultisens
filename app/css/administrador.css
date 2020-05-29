@@ -1,0 +1,390 @@
+/* -------------------------------*/
+/*                                */
+/*       PATRÓN DE COLORES:       */
+/*                                */
+/* -------------------------------*/
+
+:root {
+
+	--principal: #2C7558;
+}
+
+/* -------------------------------*/
+/*                                */
+/*              MENU:             */
+/*                                */
+/* -------------------------------*/
+
+/* ELIMINA EL SOMBREADO DE LOS BOTONES */
+
+.btn:focus {
+
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.btn-secondary {
+
+	color: var(--principal);
+	background-color: white;
+	border: #22bb65 2px solid;
+	cursor: pointer;
+}
+
+.btn-secondary:hover, .btn-secondary:focus{
+
+	background-color: rgb(44, 117, 88);
+	border-color: white;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: white;
+    background-color: rgb(44, 117, 88);
+    border-color: white;
+}
+
+/* Le damos márgen a la página para que no parezca toda apegada */
+.contenido_pagina {
+	margin: 8px;
+}
+
+.list-group {
+	margin-left: 1rem;
+}
+
+#anyadirCliente {
+	margin-right: 1rem !important;
+}
+
+
+.cerrarSesion{
+	font-family: "Century Gothic";
+    color: white;
+    background-color: var(--principal);
+    border: 2px solid white;
+}
+
+.cerrarSesion:focus,
+.cerrarSesion:hover {
+
+    background-color: white;
+    border-color: white;
+	color: rgb(44,117,88);
+}
+
+.cerrarSesion:not(:disabled):not(.disabled):active{
+	background-color: white;
+    border-color: white;
+	color: rgb(44,117,88);
+}
+
+/* -------------------------------*/
+/*                                */
+/*            BUSCADOR:           */
+/*                                */
+/* -------------------------------*/
+
+.contenedor-bloque-buscar {
+
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+	margin-left: 2.5%;
+}
+
+/* AÑADIR CLIENTE*/
+
+.btn-primary {
+
+	color: white;
+	background-color: var(--principal);
+	border: black 1px solid;
+	cursor: pointer;
+	margin-right: 2rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:link,
+.btn-primary:active,
+.btn-primary:checked {
+
+	background-color: white !important;
+	border-color: rgb(44, 117, 88) !important;
+	color: rgb(44, 117, 88) !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+/* BARRA */
+
+#buscar {
+
+	width: 57%;
+	border: 1px solid var(--principal);
+	border-radius: 0.2rem;
+	color: var(--principal);
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: white url(../media/images/lupa.png) no-repeat 98% 50%;
+}
+
+#buscar:focus {
+
+	outline: none !important;
+	box-shadow: none !important;
+	border: 2px solid var(--principal);
+}
+
+/* LUPA */
+
+
+.fa-search {
+	color: var(--principal);
+	font-size: 1.6rem;
+	margin-bottom: 0;
+	margin-top: 0.2rem;
+	margin-left: -3rem;
+	cursor: pointer;
+	display: inline-block;
+	z-index: 1;
+}
+
+.col-2 img {
+	width: 100%;
+	max-width: 100px;
+	max-height: 75px;
+}
+
+.col-4 {
+	max-width: 280px;
+	max-height: 100px;
+}
+
+li {
+	list-style: none;
+}
+
+li div .container {
+	border: 2px solid var(--principal);
+}
+
+.row {
+	border-bottom: 1px dashed var(--principal);
+	margin-bottom: 1rem;
+}
+
+/*SCROLLBAR*/
+
+.scrollbar {
+
+	max-height: 70vh;
+	border-radius: 0.5rem;
+	background: transparent;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-top: 2rem;
+	margin-right: 1rem;
+}
+
+
+#style-1::-webkit-scrollbar-track {
+
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar {
+
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: var(--principal);
+}
+
+
+
+ul {
+	padding: 0px;
+}
+
+li.elementos {
+	font-size: 16px;
+}
+
+select {
+	color: rgb(44, 117, 88);
+	border: 1px solid var(--principal);
+	border-radius: 0.2rem;
+	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.multiselect {
+	position: relative;
+	width: 160px;
+}
+
+.selectBox {
+	position: relative;
+}
+
+.selectBox select {
+	width: 100%;
+	font-weight: bold;
+}
+
+.overSelect {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+}
+
+#checkboxes {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	width: 100%;
+	background: white;
+	border: 1px solid rgb(44,117,88);
+}
+
+.custom-control-label {
+	outline: none;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	color: #fff;
+	border-color: rgb(44, 117, 88);
+	background-color: rgb(44, 117, 88);
+}
+
+
+
+/* -------------------------------*/
+/*                                */
+/*          MEDIA-QUERIES:        */
+/*                                */
+/* -------------------------------*/
+
+@media(min-width:400px) {
+
+	.btn-primary,
+	.btn-secondary {
+
+		height: 45px;
+		font-size: 13px;
+		padding: 0 0.5rem;
+	}
+
+	.svg-inline--fa {
+		color: var(--principal);
+		font-size: 3rem;
+		padding: 0.5rem;
+	}
+
+	.svg-inline--fa {
+		color: var(--principal);
+		font-size: 2.5rem;
+		padding: 0.5rem;
+	}
+
+	.col-4 {
+		padding: inherit;
+	}
+}
+@media(min-width:700px) {
+
+	.btn-primary,
+	.btn-secondary {
+
+		height: 100%;
+		font-size: 16px;
+		padding: 0.5rem;
+	}
+
+	/* le damos estilo a los iconos */
+	.svg-inline--fa {
+		color: var(--principal);
+		font-size: 3rem;
+		padding: 0.5rem;
+	}
+
+	.col-2 {
+		width: 100%;
+	}
+
+	#buscar {
+		width: 70%;
+		border: 1px solid var(--principal);
+		border-radius: 0.2rem;
+		color: var(--principal);
+		padding-left: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-right: 0.4rem;
+	}
+
+	select {
+		color: rgb(44, 117, 88);
+		border: 1px solid var(--principal);
+		border-radius: 0.2rem;
+		padding-left: 10px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		margin-left: -0.4rem;
+	}
+
+
+	.scrollbar {
+
+		max-height: 70vh;
+		border-radius: 0.5rem;
+		background: transparent;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin-top: 2rem;
+		margin-right: 5rem;
+
+
+	}
+	#checkboxes {
+	position: absolute;
+	z-index: 1;
+	left: -6px;
+	width: 100%;
+	background: white;
+	border: 1px solid rgb(44,117,88);
+}
+
+}
+
+@media(max-width:550px) {
+	.col-2 {
+		padding: inherit;
+		max-width: 100px;
+	}
+
+}
+
+@media(max-width:750px) {
+	li.elementos {
+		font-size: 12px;
+	}
+}
